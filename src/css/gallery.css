@@ -1,0 +1,40 @@
+.gallery {
+  width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px auto 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 24px;
+}
+
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  transition: transform 250ms linear;
+}
+
+.gallery-link:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+body .sl-overlay {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+body .sl-wrapper .sl-close,
+body .sl-wrapper .sl-navigation button,
+body .sl-wrapper .sl-counter {
+  color: #fff;
+  transition: color 250ms linear;
+}
+
+.sl-wrapper .sl-navigation button:hover,
+.sl-wrapper .sl-close:hover {
+  color: #ccc;
+}
+
+.sl-wrapper {
+  outline: none;
+}
